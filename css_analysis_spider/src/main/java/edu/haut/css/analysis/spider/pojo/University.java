@@ -2,9 +2,10 @@ package edu.haut.css.analysis.spider.pojo;
 
 public class University {
 	
-	private Long id;
-	private String name;//大学名称
-	private String address;//大学地址
+	private Long id; 
+	private String name;  //大学名称
+	private String address; //大学地址
+	private String location; //大学经纬度
 	public Long getId() {
 		return id;
 	}
@@ -17,15 +18,18 @@ public class University {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public String getAddress() {
 		return address;
 	}
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	@Override
-	public String toString() {
-		return "[" + name + "," + address + "]";
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
 	}
 	
 	
